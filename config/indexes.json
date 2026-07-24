@@ -1,0 +1,24 @@
+{
+  "indexes": [
+    {
+      "symbol": "^N225",
+      "label": "日経平均"
+    },
+    {
+      "symbol": "^GSPC",
+      "label": "S&P 500"
+    },
+    {
+      "symbol": "^IXIC",
+      "label": "NASDAQ"
+    },
+    {
+      "symbol": "^SOX",
+      "label": "SOX指数"
+    },
+    {
+      "symbol": "^VIX",
+      "label": "恐怖指数"
+    }
+  ]
+}

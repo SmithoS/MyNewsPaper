@@ -1,0 +1,61 @@
+name: Morning Report
+
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run morning report
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          WEATHER_LATITUDE: ${{ secrets.WEATHER_LATITUDE }}
+          WEATHER_LONGITUDE: ${{ secrets.WEATHER_LONGITUDE }}
+        run: python -m src.main
+
+      - name: Commit state and public page files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/funds_high_watermark.json doc/index.html doc/feed.xml doc/alexa.txt
+          git diff --cached --quiet || git commit -m "Update morning report public page"
+          git push
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload public page artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: doc
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

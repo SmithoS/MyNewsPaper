@@ -1,0 +1,40 @@
+{
+  "funds": [
+    {
+      "id": "JP90C000H1T1",
+      "name": "eMAXIS Slim全世界株式(オール･カントリー)",
+      "url": "https://toushin-lib.fwg.ne.jp/FdsWeb/FDST030000?isinCd=JP90C000H1T1",
+      "nav_classes": [
+        "h3",
+        "font-weight-bold"
+      ]
+    },
+    {
+      "id": "JP90C000GKC6",
+      "name": "eMAXIS Slim米国株式(S&P500)",
+      "url": "https://toushin-lib.fwg.ne.jp/FdsWeb/FDST030000?isinCd=JP90C000GKC6",
+      "nav_classes": [
+        "h3",
+        "font-weight-bold"
+      ]
+    },
+    {
+      "id": "JP90C000S1V4",
+      "name": "iFreeNEXT全世界半導体株インデックス",
+      "url": "https://toushin-lib.fwg.ne.jp/FdsWeb/FDST030000?isinCd=JP90C000S1V4",
+      "nav_classes": [
+        "h3",
+        "font-weight-bold"
+      ]
+    },
+    {
+      "id": "JP90C000QLW1",
+      "name": "一歩先いくUSテック・トップ20インデックス",
+      "url": "https://toushin-lib.fwg.ne.jp/FdsWeb/FDST030000?isinCd=JP90C000QLW1",
+      "nav_classes": [
+        "h3",
+        "font-weight-bold"
+      ]
+    }
+  ]
+}

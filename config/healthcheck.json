@@ -1,0 +1,11 @@
+{
+  "timezone": "Asia/Tokyo",
+  "bots": [
+    {
+      "name": "栞子BOT",
+      "url": "https://shioriko-bot-smitho-dbff527a.koyeb.app/",
+      "expected_status": 200,
+      "timeout_seconds": 30
+    }
+  ]
+}
