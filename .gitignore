@@ -1,1 +1,8 @@
-**/__pycache__/**
+# Pythonが生成するキャッシュや一時ファイル
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 環境変数や秘密情報
+.env
