@@ -12,7 +12,7 @@ Python + GitHub Actions で毎朝 06:00 JST に Discord へ投稿するパーソ
 - `src/formatters/public_page.py`: GitHub Pages / Echo 読み上げ向け整形
 - `src/storage/json_store.py`: JSON 状態保存
 - `data/funds_high_watermark.json`: 投資信託の過去最高基準価額
-- `doc/`: GitHub Pages で公開するEcho読み上げ向けページ、RSS、テキスト
+- `docs/`: GitHub Pages で公開するEcho読み上げ向けページ、RSS、テキスト
 - `.github/workflows/morning-report.yml`: JST 06:00 実行、公開ページ生成、状態ファイル自動コミット、Pagesデプロイ
 
 ## GitHub Secrets
@@ -38,7 +38,7 @@ Python + GitHub Actions で毎朝 06:00 JST に Discord へ投稿するパーソ
 投資信託は、各ページの `<span class="h3 font-weight-bold">` に表示されている基準価額を取得します。
 過去最高基準価額は `data/funds_high_watermark.json` に保存され、GitHub Actions 実行後に自動コミットされます。
 
-GitHub Pages はワークフローで `doc/` をデプロイします。リポジトリ設定の Pages source は GitHub Actions にしてください。
+GitHub Pages はワークフローで `docs/` をデプロイします。リポジトリ設定の Pages source は GitHub Actions にしてください。
 
 ## ローカル実行
 

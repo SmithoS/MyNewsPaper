@@ -124,7 +124,7 @@ def format_rss(data: dict, timezone: str = "Asia/Tokyo") -> str:
 """
 
 
-def write_public_pages(data: dict, output_dir: str | Path = "doc", timezone: str = "Asia/Tokyo") -> None:
+def write_public_pages(data: dict, output_dir: str | Path = "docs", timezone: str = "Asia/Tokyo") -> None:
     path = Path(output_dir)
     path.mkdir(parents=True, exist_ok=True)
     (path / "index.html").write_text(format_public_html(data, timezone), encoding="utf-8")
