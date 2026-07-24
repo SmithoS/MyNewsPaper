@@ -2,7 +2,33 @@
 <rss version="2.0">
   <channel>
     <title>パーソナル朝刊</title>
-    <description>このフィードはGitHub Actions実行時に更新されます。</description>
+    <description>Amazon Echo読み上げ用のパーソナル朝刊です。</description>
     <language>ja-jp</language>
+    <lastBuildDate>Sat, 25 Jul 2026 07:04:07 +0900</lastBuildDate>
+    <item>
+      <title>パーソナル朝刊 2026-07-25</title>
+      <description>パーソナル朝刊、2026年7月25日（土）です。
+
+天気です。
+晴れ、最低気温25度、最高気温36度、降水確率49パーセントです。
+
+投資信託です。
+- eMAXIS Slim全世界株式(オール･カントリー)は現在38,243円、最高値との差は-0.75パーセントです。
+- eMAXIS Slim米国株式(S&amp;P500)は現在44,669円、最高値との差は-1.08パーセントです。
+- iFreeNEXT全世界半導体株インデックスは現在17,646円、最高値との差は-8.36パーセントです。
+- 一歩先いくUSテック・トップ20インデックスは現在19,220円、最高値との差は-6.26パーセントです。
+
+株価です。
+- DRAMは53.20、前日比-5.10、-8.75パーセントです。
+
+指数です。
+- 日経平均は66,422.60、前日比+307.00、+0.46パーセントです。
+- S&amp;P 500は7,411.98、前日比+3.68、+0.05パーセントです。
+- NASDAQは24,975.82、前日比-161.87、-0.64パーセントです。
+- SOX指数は11,818.89、前日比-524.95、-4.25パーセントです。
+- 恐怖指数は18.58、前日比-0.12、-0.64パーセントです。</description>
+      <pubDate>Sat, 25 Jul 2026 07:04:07 +0900</pubDate>
+      <guid isPermaLink="false">morning-report-2026-07-25</guid>
+    </item>
   </channel>
 </rss>
