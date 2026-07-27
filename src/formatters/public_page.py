@@ -62,9 +62,6 @@ def format_public_text(data: dict, timezone: str = "Asia/Tokyo") -> str:
     lines = [
         f"パーソナル朝刊、{_date_label(now)}です。",
         "",
-        "天気です。",
-        _format_weather(data.get("weather", {})),
-        "",
         "投資信託です。",
         *[f"- {line}" for line in _format_funds(data.get("funds", {}))],
         "",
