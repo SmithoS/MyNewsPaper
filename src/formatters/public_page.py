@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from email.utils import format_datetime
 from html import escape
@@ -121,9 +122,55 @@ def format_rss(data: dict, timezone: str = "Asia/Tokyo") -> str:
 """
 
 
+def format_market_json(data: dict, timezone: str = "Asia/Tokyo") -> str:
+    now = datetime.now(ZoneInfo(timezone))
+
+    indexes = [
+        {
+            "name": item["label"],
+            "value": int(item["close"]),
+        }
+        for item in data.get("indexes", {}).get("items", [])
+        if item.get("ok")
+    ]
+
+    funds = []
+    for item in data.get("funds", {}).get("items", []):
+        if not item.get("ok"):
+            continue
+        high_watermark = item.get("high_watermark") or 0
+        ratio_to_high_pct = (item["nav"] / high_watermark * 100) if high_watermark else None
+        funds.append(
+            {
+                "name": item["name"],
+                "value": item["nav"],
+                "ratio_to_high_pct": round(ratio_to_high_pct - 100, 2) if ratio_to_high_pct is not None else 0,
+            }
+        )
+
+    stocks = [
+        {
+            "name": item["label"],
+            "value": item["close"],
+            "day_change_pct": round(item["change_pct"], 2),
+        }
+        for item in data.get("stocks", {}).get("items", [])
+        if item.get("ok")
+    ]
+
+    payload = {
+        "generated_at": now.isoformat(timespec="seconds"),
+        "indexes": indexes,
+        "funds": funds,
+        "stocks": stocks,
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+
+
 def write_public_pages(data: dict, output_dir: str | Path = "docs", timezone: str = "Asia/Tokyo") -> None:
     path = Path(output_dir)
     path.mkdir(parents=True, exist_ok=True)
     (path / "index.html").write_text(format_public_html(data, timezone), encoding="utf-8")
     (path / "feed.xml").write_text(format_rss(data, timezone), encoding="utf-8")
     (path / "alexa.txt").write_text(format_public_text(data, timezone) + "\n", encoding="utf-8")
+    (path / "market.json").write_text(format_market_json(data, timezone), encoding="utf-8")

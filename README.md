@@ -12,7 +12,7 @@ Python + GitHub Actions で毎朝 06:00 JST に Discord へ投稿するパーソ
 - `src/formatters/public_page.py`: GitHub Pages / Echo 読み上げ向け整形
 - `src/storage/json_store.py`: JSON 状態保存
 - `data/funds_high_watermark.json`: 投資信託の過去最高基準価額
-- `docs/`: GitHub Pages で公開するEcho読み上げ向けページ、RSS、テキスト
+- `docs/`: GitHub Pages で公開するEcho読み上げ向けページ、RSS、テキスト、マーケット情報JSON
 - `.github/workflows/morning-report.yml`: JST 06:00 実行、公開ページ生成、状態ファイル自動コミット、Pagesデプロイ
 
 ## GitHub Secrets
@@ -39,6 +39,23 @@ Python + GitHub Actions で毎朝 06:00 JST に Discord へ投稿するパーソ
 過去最高基準価額は `data/funds_high_watermark.json` に保存され、GitHub Actions 実行後に自動コミットされます。
 
 GitHub Pages はワークフローで `docs/` をデプロイします。リポジトリ設定の Pages source は GitHub Actions にしてください。
+
+`docs/market.json` は別システム連携用のマーケット情報です。
+
+```json
+{
+  "generated_at": "2026-08-21T06:00:00+09:00",
+  "indexes": [
+    { "name": "日経平均", "value": 42000.0 }
+  ],
+  "funds": [
+    { "name": "eMAXIS Slim全世界株式(オール･カントリー)", "value": 38000.0, "ratio_to_high_pct": 99.25 }
+  ],
+  "stocks": [
+    { "name": "Apple", "value": 220.0, "day_change_pct": 1.23 }
+  ]
+}
+```
 
 ## ローカル実行
 
