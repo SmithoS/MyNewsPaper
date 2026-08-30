@@ -4,10 +4,10 @@
     <title>パーソナル朝刊</title>
     <description>Amazon Echo読み上げ用のパーソナル朝刊です。</description>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 30 Aug 2026 07:59:39 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 08:12:11 +0900</lastBuildDate>
     <item>
-      <title>パーソナル朝刊 2026-08-30</title>
-      <description>パーソナル朝刊、2026年8月30日（日）です。
+      <title>パーソナル朝刊 2026-08-31</title>
+      <description>パーソナル朝刊、2026年8月31日（月）です。
 
 投資信託です。
 - eMAXIS Slim全世界株式(オール･カントリー)は現在38,842円、最高値との差は-0.45パーセントです。
@@ -24,8 +24,8 @@
 - NASDAQは26,402.42、前日比-138.93、-0.52パーセントです。
 - SOX指数は11,469.66、前日比-412.51、-3.47パーセントです。
 - 恐怖指数は14.43、前日比-0.08、-0.55パーセントです。</description>
-      <pubDate>Sun, 30 Aug 2026 07:59:39 +0900</pubDate>
-      <guid isPermaLink="false">morning-report-2026-08-30</guid>
+      <pubDate>Mon, 31 Aug 2026 08:12:11 +0900</pubDate>
+      <guid isPermaLink="false">morning-report-2026-08-31</guid>
     </item>
   </channel>
 </rss>
