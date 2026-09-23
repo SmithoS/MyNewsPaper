@@ -4,10 +4,10 @@
     <title>パーソナル朝刊</title>
     <description>Amazon Echo読み上げ用のパーソナル朝刊です。</description>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 23 Sep 2026 08:30:15 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 08:26:09 +0900</lastBuildDate>
     <item>
-      <title>パーソナル朝刊 2026-09-23</title>
-      <description>パーソナル朝刊、2026年9月23日（水）です。
+      <title>パーソナル朝刊 2026-09-24</title>
+      <description>パーソナル朝刊、2026年9月24日（木）です。
 
 投資信託です。
 - eMAXIS Slim全世界株式(オール･カントリー)は現在37,532円、最高値との差は-3.81パーセントです。
@@ -16,16 +16,16 @@
 - 一歩先いくUSテック・トップ20インデックスは現在19,918円、最高値との差は-2.86パーセントです。
 
 株価です。
-- DRAMは63.62、前日比+2.04、+3.31パーセントです。
+- DRAMは61.90、前日比-1.72、-2.70パーセントです。
 
 指数です。
 - 日経平均は65,018.95、前日比+882.70、+1.38パーセントです。
-- S&amp;P 500は7,764.64、前日比-0.06、-0.00パーセントです。
-- NASDAQは27,244.28、前日比+122.19、+0.45パーセントです。
-- SOX指数は12,689.82、前日比+256.65、+2.06パーセントです。
-- 恐怖指数は14.21、前日比-0.66、-4.44パーセントです。</description>
-      <pubDate>Wed, 23 Sep 2026 08:30:15 +0900</pubDate>
-      <guid isPermaLink="false">morning-report-2026-09-23</guid>
+- S&amp;P 500は7,706.03、前日比-58.67、-0.76パーセントです。
+- NASDAQは26,936.04、前日比-186.05、-0.69パーセントです。
+- SOX指数は12,534.27、前日比+101.10、+0.81パーセントです。
+- 恐怖指数は15.18、前日比+0.31、+2.08パーセントです。</description>
+      <pubDate>Thu, 24 Sep 2026 08:26:09 +0900</pubDate>
+      <guid isPermaLink="false">morning-report-2026-09-24</guid>
     </item>
   </channel>
 </rss>
