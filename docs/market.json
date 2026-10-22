@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-10-22T08:54:35+09:00",
+  "generated_at": "2026-10-23T08:53:23+09:00",
   "indexes": [
     {
       "name": "日経平均",
-      "value": 64075
+      "value": 64621
     },
     {
       "name": "S&P 500",
-      "value": 7757
+      "value": 7663
     },
     {
       "name": "NASDAQ",
-      "value": 26702
+      "value": 26008
     },
     {
       "name": "SOX指数",
-      "value": 11505
+      "value": 10731
     },
     {
       "name": "恐怖指数",
-      "value": 16
+      "value": 19
     }
   ],
   "funds": [
     {
       "name": "eMAXIS Slim全世界株式(オール･カントリー)",
-      "value": 37858.0,
-      "ratio_to_high_pct": -2.98
+      "value": 38036.0,
+      "ratio_to_high_pct": -2.52
     },
     {
       "name": "eMAXIS Slim米国株式(S&P500)",
-      "value": 45015.0,
-      "ratio_to_high_pct": -1.56
+      "value": 45226.0,
+      "ratio_to_high_pct": -1.1
     },
     {
       "name": "iFreeNEXT全世界半導体株インデックス",
-      "value": 16224.0,
-      "ratio_to_high_pct": -15.75
+      "value": 16497.0,
+      "ratio_to_high_pct": -14.33
     },
     {
       "name": "一歩先いくUSテック・トップ20インデックス",
-      "value": 20109.0,
-      "ratio_to_high_pct": -5.38
+      "value": 19816.0,
+      "ratio_to_high_pct": -6.76
     }
   ],
   "stocks": [
     {
       "name": "DRAM",
-      "value": 49.15999984741211,
-      "day_change_pct": 3.02
+      "value": 45.68000030517578,
+      "day_change_pct": -7.08
     }
   ]
 }
