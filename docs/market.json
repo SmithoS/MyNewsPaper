@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T09:24:13+09:00",
+  "generated_at": "2026-11-01T08:57:11+09:00",
   "indexes": [
     {
       "name": "日経平均",
-      "value": 64659
+      "value": 63290
     },
     {
       "name": "S&P 500",
@@ -11,7 +11,7 @@
     },
     {
       "name": "NASDAQ",
-      "value": 25436
+      "value": 25437
     },
     {
       "name": "SOX指数",
@@ -47,8 +47,8 @@
   "stocks": [
     {
       "name": "DRAM",
-      "value": 51.75,
-      "day_change_pct": -4.38
+      "value": 48.0099983215332,
+      "day_change_pct": -7.23
     }
   ]
 }
