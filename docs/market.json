@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-03T11:46:28+09:00",
+  "generated_at": "2026-11-04T10:03:19+09:00",
   "indexes": [
     {
       "name": "日経平均",
-      "value": 63081
+      "value": 62159
     },
     {
       "name": "S&P 500",
-      "value": 7541
+      "value": 7568
     },
     {
       "name": "NASDAQ",
-      "value": 25164
+      "value": 25372
     },
     {
       "name": "SOX指数",
-      "value": 10328
+      "value": 10600
     },
     {
       "name": "恐怖指数",
-      "value": 21
+      "value": 20
     }
   ],
   "funds": [
