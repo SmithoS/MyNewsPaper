@@ -4,10 +4,10 @@
     <title>パーソナル朝刊</title>
     <description>Amazon Echo読み上げ用のパーソナル朝刊です。</description>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 14 Nov 2026 10:17:35 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 09:46:36 +0900</lastBuildDate>
     <item>
-      <title>パーソナル朝刊 2026-11-14</title>
-      <description>パーソナル朝刊、2026年11月14日（土）です。
+      <title>パーソナル朝刊 2026-11-15</title>
+      <description>パーソナル朝刊、2026年11月15日（日）です。
 
 投資信託です。
 - eMAXIS Slim全世界株式(オール･カントリー)は現在37,748円、最高値との差は-3.26パーセントです。
@@ -16,16 +16,16 @@
 - 一歩先いくUSテック・トップ20インデックスは現在19,197円、最高値との差は-9.67パーセントです。
 
 株価です。
-- DRAMは43.66、前日比-1.19、-2.65パーセントです。
+- DRAMは42.40、前日比-1.26、-2.89パーセントです。
 
 指数です。
-- 日経平均は60,819.36、前日比-429.23、-0.70パーセントです。
+- 日経平均は61,142.35、前日比+322.99、+0.53パーセントです。
 - S&amp;P 500は7,561.67、前日比-30.73、-0.40パーセントです。
 - NASDAQは25,136.27、前日比-229.82、-0.91パーセントです。
 - SOX指数は10,146.32、前日比-360.35、-3.43パーセントです。
 - 恐怖指数は19.30、前日比+0.60、+3.21パーセントです。</description>
-      <pubDate>Sat, 14 Nov 2026 10:17:35 +0900</pubDate>
-      <guid isPermaLink="false">morning-report-2026-11-14</guid>
+      <pubDate>Sun, 15 Nov 2026 09:46:36 +0900</pubDate>
+      <guid isPermaLink="false">morning-report-2026-11-15</guid>
     </item>
   </channel>
 </rss>
