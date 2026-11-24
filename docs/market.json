@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-23T10:24:58+09:00",
+  "generated_at": "2026-11-24T14:08:22+09:00",
   "indexes": [
     {
       "name": "日経平均",
-      "value": 56436
+      "value": 58588
     },
     {
       "name": "S&P 500",
-      "value": 6910
+      "value": 7237
     },
     {
       "name": "NASDAQ",
-      "value": 22617
+      "value": 24089
     },
     {
       "name": "SOX指数",
-      "value": 8408
+      "value": 9588
     },
     {
       "name": "恐怖指数",
-      "value": 35
+      "value": 26
     }
   ],
   "funds": [
@@ -47,8 +47,8 @@
   "stocks": [
     {
       "name": "DRAM",
-      "value": 33.36000061035156,
-      "day_change_pct": -13.19
+      "value": 39.56999969482422,
+      "day_change_pct": 18.62
     }
   ]
 }
